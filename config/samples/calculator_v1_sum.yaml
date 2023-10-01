@@ -1,0 +1,12 @@
+apiVersion: calculator.sample.domain/v1
+kind: Sum
+metadata:
+  labels:
+    app.kubernetes.io/name: sum
+    app.kubernetes.io/instance: sum-sample
+    app.kubernetes.io/part-of: custom-k8-controller
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: custom-k8-controller
+  name: sum-sample
+spec:
+  # TODO(user): Add fields here

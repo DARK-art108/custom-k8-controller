@@ -1,0 +1,27 @@
+# permissions for end users to view sums.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: sum-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: custom-k8-controller
+    app.kubernetes.io/part-of: custom-k8-controller
+    app.kubernetes.io/managed-by: kustomize
+  name: sum-viewer-role
+rules:
+- apiGroups:
+  - calculator.sample.domain
+  resources:
+  - sums
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - calculator.sample.domain
+  resources:
+  - sums/status
+  verbs:
+  - get
