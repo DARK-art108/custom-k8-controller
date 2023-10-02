@@ -25,17 +25,15 @@ import (
 
 // SumSpec defines the desired state of Sum
 type SumSpec struct {
-	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
-
-	// Foo is an example field of Sum. Edit sum_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// Foo string `json:"foo,omitempty"`
+	NumberOne int `json:"numberOne,omitempty"`
+	NumberTwo int `json:"numberTwo,omitempty"`
 }
 
 // SumStatus defines the observed state of Sum
 type SumStatus struct {
-	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
+	// Result string `json:"result,omitempty"`
+	Result int `json:"result,omitempty"`
 }
 
 //+kubebuilder:object:root=true

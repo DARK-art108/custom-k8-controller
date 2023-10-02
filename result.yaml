@@ -1,0 +1,20 @@
+apiVersion: calculator.sample.domain/v1
+kind: Sum
+metadata:
+  creationTimestamp: "2023-10-02T15:10:05Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/created-by: custom-k8-controller
+    app.kubernetes.io/instance: sum-sample
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: sum
+    app.kubernetes.io/part-of: custom-k8-controller
+  name: sum-sample
+  namespace: default
+  resourceVersion: "21593"
+  uid: a065e241-6cf2-4449-ad3e-6639e71c41b8
+spec:
+  numberOne: 2
+  numberTwo: 3
+status:
+  result: 5

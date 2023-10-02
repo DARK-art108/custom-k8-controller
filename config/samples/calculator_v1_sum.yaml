@@ -10,3 +10,5 @@ metadata:
   name: sum-sample
 spec:
   # TODO(user): Add fields here
+  numberOne: 2
+  numberTwo: 3
